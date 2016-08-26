@@ -1,0 +1,6 @@
+C:\(HP1TB\workspace\csharpworkspace\CountdownMaximize\CountdownMaximize\bin\Release\CountdownMaximize.exe.config
+C:\(HP1TB\workspace\csharpworkspace\CountdownMaximize\CountdownMaximize\bin\Release\CountdownMaximize.exe
+C:\(HP1TB\workspace\csharpworkspace\CountdownMaximize\CountdownMaximize\obj\Release\CountdownMaximize.csprojResolveAssemblyReference.cache
+C:\(HP1TB\workspace\csharpworkspace\CountdownMaximize\CountdownMaximize\obj\Release\CountdownMaximize.Resource1.resources
+C:\(HP1TB\workspace\csharpworkspace\CountdownMaximize\CountdownMaximize\obj\Release\CountdownMaximize.csproj.GenerateResource.Cache
+C:\(HP1TB\workspace\csharpworkspace\CountdownMaximize\CountdownMaximize\obj\Release\CountdownMaximize.exe

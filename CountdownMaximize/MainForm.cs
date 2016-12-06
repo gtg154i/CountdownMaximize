@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Media;
 using System.IO;
-using System.Threading;
+using System.Threading.Tasks;
 
 namespace CountdownMaximize
 {
@@ -198,7 +198,7 @@ namespace CountdownMaximize
 			StartCountdown(); //repeat
 		}
 		
-		private void TimeLeftTimerTick(object sender, EventArgs e)
+		private async void TimeLeftTimerTick(object sender, EventArgs e)
 		{
 			//START OF:countdown still running portion
 			if (timeLeft > 0)
@@ -451,7 +451,7 @@ namespace CountdownMaximize
 				
 				if (autoRepeatCheckbox.Checked)
 				{
-					System.Threading.Thread.Sleep(10000);
+					await Task.Delay(10000); 
 					iconToUse = Resource1._48;
 					this.Icon = iconToUse;
 					notifyIcon.Icon = iconToUse;

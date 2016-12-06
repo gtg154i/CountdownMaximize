@@ -5,6 +5,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Media;
 using System.IO;
+using System.Threading;
 
 namespace CountdownMaximize
 {
@@ -446,6 +447,15 @@ namespace CountdownMaximize
 							player.Play();
 						}
 					}
+				}
+				
+				if (autoRepeatCheckbox.Checked)
+				{
+					System.Threading.Thread.Sleep(10000);
+					iconToUse = Resource1._48;
+					this.Icon = iconToUse;
+					notifyIcon.Icon = iconToUse;
+					StartCountdown(); //repeat
 				}
 				
 			}

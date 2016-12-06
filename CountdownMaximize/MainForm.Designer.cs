@@ -51,6 +51,7 @@ namespace CountdownMaximize
 			this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
 			this.animateIconCheckbox = new System.Windows.Forms.CheckBox();
 			this.animateTrayIconCheckbox = new System.Windows.Forms.CheckBox();
+			this.autoRepeatCheckbox = new System.Windows.Forms.CheckBox();
 			this.SuspendLayout();
 			// 
 			// countdownTimeText
@@ -274,11 +275,22 @@ namespace CountdownMaximize
 			this.animateTrayIconCheckbox.Text = "Animate Tray Icon";
 			this.animateTrayIconCheckbox.UseVisualStyleBackColor = true;
 			// 
+			// autoRepeatCheckbox
+			// 
+			this.autoRepeatCheckbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.autoRepeatCheckbox.Location = new System.Drawing.Point(490, 127);
+			this.autoRepeatCheckbox.Name = "autoRepeatCheckbox";
+			this.autoRepeatCheckbox.Size = new System.Drawing.Size(320, 40);
+			this.autoRepeatCheckbox.TabIndex = 24;
+			this.autoRepeatCheckbox.Text = "Auto Repeat After 10s";
+			this.autoRepeatCheckbox.UseVisualStyleBackColor = true;
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(890, 862);
+			this.Controls.Add(this.autoRepeatCheckbox);
 			this.Controls.Add(this.animateTrayIconCheckbox);
 			this.Controls.Add(this.animateIconCheckbox);
 			this.Controls.Add(this.timeLeftInTitleCheckbox);
@@ -328,5 +340,6 @@ namespace CountdownMaximize
 		private System.Windows.Forms.Label repeatLabel;
 		private System.Windows.Forms.Button reselectButton;
 		private System.Windows.Forms.CheckBox timeLeftInTitleCheckbox;
+		private System.Windows.Forms.CheckBox autoRepeatCheckbox;
 	}
 }
